@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Terminal.Handlers;
+﻿using Terminal.Handlers;
 
 namespace Terminal.Models.TerminalRequests.Base
 {
@@ -11,6 +6,7 @@ namespace Terminal.Models.TerminalRequests.Base
     {
         #region Properties
         public string CommandName { get; protected set; }
+        public string Description { get; protected set; }
         #endregion
         #region Methods
         public virtual void Execute(CommandHandler handler, string commandBody = "") 
