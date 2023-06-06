@@ -1,4 +1,5 @@
 ﻿using Terminal.Helpers;
+using Terminal.Models.TerminalRequests;
 using Terminal.Models.TerminalRequests.Base;
 
 namespace Terminal.Handlers

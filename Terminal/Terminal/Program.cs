@@ -14,5 +14,9 @@ while (true)
 void Init()
 {
     commandHandler
-        .AddCommandObject(new CD_TerminalRequest());
+        .AddCommandObject(new CD_TerminalRequest())
+        .AddCommandObject(new mkfile_TerminalRequest())
+        .AddCommandObject(new mkdir_TerminalRequest())
+        .AddCommandObject(new Help_TerminalRequest());
 }
+
