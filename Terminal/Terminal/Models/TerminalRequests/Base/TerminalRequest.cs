@@ -11,6 +11,7 @@ namespace Terminal.Models.TerminalRequests.Base
     {
         #region Properties
         public string CommandName { get; protected set; }
+        public string Description { get; protected set; }
         #endregion
         #region Methods
         public virtual void Execute(CommandHandler handler, string commandBody = "") 

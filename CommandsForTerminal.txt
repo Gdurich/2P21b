@@ -1,3 +1,4 @@
++cd {|| .. || dirName || url + dirName}
 +mkdir {url + dirName || dirName} 
 +tree {url + dirName || dirName }
 +move {url + name || name} {url + name}

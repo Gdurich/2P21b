@@ -10,6 +10,7 @@ namespace Terminal.Models.TerminalRequests
         public CD_TerminalRequest()
         {
             CommandName = "cd";
+            Description = "{ || .. || dirName || url + dirName}";
         }
         public override void Execute(CommandHandler handler, string commandBody = "")
         {
