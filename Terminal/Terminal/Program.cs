@@ -14,5 +14,7 @@ while (true)
 void Init()
 {
     commandHandler
-        .AddCommandObject(new CD_TerminalRequest());
+        .AddCommandObject(new CD_TerminalRequest())
+        .AddCommandObject(new Printbin_TerminalRequest())
+        .AddCommandObject(new Sisinfo_TerminalRequest());
 }
