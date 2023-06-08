@@ -18,17 +18,14 @@ namespace Terminal.Models.TerminalRequests
         {
             string fileName = commandBody.Trim();
 
-            if (!string.IsNullOrWhiteSpace(fileName) && !fileName.Contains("\\") && !fileName.Contains("/"))
+            switch (!string.IsNullOrWhiteSpace(fileName) && !fileName.Contains("\\"))
             {
-                RecursiveSearchAndConvertToBinary(fileName);
-            }
-            else if (!string.IsNullOrWhiteSpace(fileName) && (fileName.Contains("\\") || fileName.Contains("/")))
-            {
-                ConvertFileToBinary(fileName);
-            }
-            else
-            {
-                Console.WriteLine("Введено неправильну операцію.");
+                case true:
+                    RecursiveSearchAndConvertToBinary(fileName);
+                    break;
+                case false:
+                    ConvertFileToBinary(fileName);
+                    break;
             }
         }
         static void RecursiveSearchAndConvertToBinary(string fileName)
