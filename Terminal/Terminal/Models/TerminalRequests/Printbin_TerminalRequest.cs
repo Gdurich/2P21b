@@ -18,11 +18,11 @@ namespace Terminal.Models.TerminalRequests
         {
             string fileName = commandBody.Trim();
 
-            if (IsFileName(fileName))
+            if (!string.IsNullOrWhiteSpace(fileName) && !fileName.Contains("\\") && !fileName.Contains("/"))
             {
                 RecursiveSearchAndConvertToBinary(fileName);
             }
-            else if (IsFilePath(fileName))
+            else if (!string.IsNullOrWhiteSpace(fileName) && (fileName.Contains("\\") || fileName.Contains("/")))
             {
                 ConvertFileToBinary(fileName);
             }
@@ -30,16 +30,6 @@ namespace Terminal.Models.TerminalRequests
             {
                 Console.WriteLine("Введено неправильну операцію.");
             }
-        }
-
-        public static bool IsFileName(string input)
-        {
-            return !string.IsNullOrWhiteSpace(input) && !input.Contains("\\") && !input.Contains("/");
-        }
-
-        static bool IsFilePath(string input)
-        {
-            return !string.IsNullOrWhiteSpace(input) && (input.Contains("\\") || input.Contains("/"));
         }
         static void RecursiveSearchAndConvertToBinary(string fileName)
         {
