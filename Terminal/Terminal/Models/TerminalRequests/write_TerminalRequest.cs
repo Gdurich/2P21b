@@ -10,6 +10,7 @@ namespace Terminal.Models.TerminalRequests
         public Write()
         {
             CommandName = "write";
+            Description = "{url + name || name} ----> editor open to write";
         }
         public override void Execute(CommandHandler handler, string commandBody = "")
         {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using Terminal.Handlers;
 using Terminal.Models.TerminalRequests.Base;
 
@@ -13,6 +14,7 @@ namespace Terminal.Models.TerminalRequests
         public Sisinfo_TerminalRequest()
         {
             CommandName = "sisinfo";
+            Description = "{view information about system}";
         }
         public override void Execute(CommandHandler handler, string commandBody = "")
         {

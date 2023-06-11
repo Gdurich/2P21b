@@ -13,6 +13,7 @@ namespace Terminal.Models.TerminalRequests
         public Printbin_TerminalRequest()
         {
             CommandName = "printbin";
+            Description = "{url + name || name}";
         }
         public override void Execute(CommandHandler handler, string commandBody = "")
         {

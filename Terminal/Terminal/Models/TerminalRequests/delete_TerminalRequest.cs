@@ -11,6 +11,7 @@ namespace Terminal.Models.TerminalRequests
         public Delete()
         {
             CommandName = "delete";
+            Description = "{url + name || name}";
         }
         public override void Execute(CommandHandler handler, string commandBody = "")
         {

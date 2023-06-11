@@ -8,7 +8,7 @@ namespace Terminal.Models.TerminalRequests
         public Help_TerminalRequest()
         {
             CommandName = "help";
-            Description = "{Information about commands}";
+            Description = "{view information about commands}";
         }
 
         public override void Execute(CommandHandler handler, string commandBody = "")
