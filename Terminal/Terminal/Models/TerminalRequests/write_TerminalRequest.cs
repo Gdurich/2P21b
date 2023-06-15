@@ -3,6 +3,7 @@ using System.IO;
 using Terminal.Handlers;
 using Terminal.Helpers;
 using Terminal.Models.TerminalRequests.Base;
+
 namespace Terminal.Models.TerminalRequests
 {
     public class Write : TerminalRequest

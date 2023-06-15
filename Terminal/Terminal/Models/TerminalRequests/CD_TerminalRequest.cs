@@ -13,6 +13,7 @@ namespace Terminal.Models.TerminalRequests
             CommandName = "cd";
             Description = "{ || .. || dirName || url + dirName}";
         }
+
         public override void Execute(CommandHandler handler, string commandBody = "")
         {
             commandBody = commandBody.Replace("\\\\", "\\");

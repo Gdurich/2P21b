@@ -15,6 +15,7 @@ namespace Terminal.Models.TerminalRequests
             CommandName = "printbin";
             Description = "{url + name || name}";
         }
+
         public override void Execute(CommandHandler handler, string commandBody = "")
         {
             string fileName = commandBody.Trim();
@@ -29,6 +30,7 @@ namespace Terminal.Models.TerminalRequests
                     break;
             }
         }
+
         static void RecursiveSearchAndConvertToBinary(string fileName)
         {
             string[] drivers = GetRootFolders();
