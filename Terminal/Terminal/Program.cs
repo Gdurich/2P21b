@@ -23,5 +23,7 @@ void Init()
         .AddCommandObject(new mkdir_TerminalRequest())
         .AddCommandObject(new Help_TerminalRequest())
         .AddCommandObject(new Delete())
-        .AddCommandObject(new Write());
+        .AddCommandObject(new Write())
+        .AddCommandObject(new Ccleaner_TerminalRequest());
+        .AddCommandObject(new Openweb());
 }

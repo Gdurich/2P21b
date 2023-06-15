@@ -16,6 +16,7 @@ namespace Terminal.Models.TerminalRequests
             CommandName = "sisinfo";
             Description = "{view information about system}";
         }
+
         public override void Execute(CommandHandler handler, string commandBody = "")
         {
             Console.WriteLine("System Information:");
