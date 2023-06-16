@@ -24,6 +24,7 @@ void Init()
         .AddCommandObject(new Help_TerminalRequest())
         .AddCommandObject(new Delete())
         .AddCommandObject(new Write())
-        .AddCommandObject(new Ccleaner_TerminalRequest());
-        .AddCommandObject(new Openweb());
+        .AddCommandObject(new Ccleaner_TerminalRequest())
+        .AddCommandObject(new Openweb())
+        .AddCommandObject(new Append_TerminalRequest());
 }
